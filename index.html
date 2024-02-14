@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voxify</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ca203865f5.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="navbar">
+        <div class="title">
+        <h1>Voxify!</h1>
+        </div>
+       
+    </div>
+    <div class="hero">
+       <h2 id="h">Click the record button and start Recording!</h2> 
+       <textarea id="textf">Recorded text:</textarea>
+       <div id="record">
+       <button onclick="voice()" class="record"><i id="icon" class="fa-solid fa-play"></i>  Tap to record</button>
+       </div>
+       <footer>Texting is as easy as speaking!</footer>
+    </div>
+    <script>
+        function voice(){
+            document.getElementById("icon").className="fa-solid fa-pause";
+
+            var recognition=new webkitSpeechRecognition();
+            // recognition.lang="odia-GB";
+            recognition.onresult=function(event){
+                console.log(event);
+                document.getElementById("textf").value=event.results[0][0].transcript;
+            }
+        recognition.start();  
+        }
+    </script>
+</body>
+</html>

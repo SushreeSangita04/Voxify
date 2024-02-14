@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    background:rgb(153, 76, 235);
+    /* display: flex;
+    align-items: center;
+    flex-direction: column; */
+}
+#h{
+    color: aliceblue;
+    margin-top: 30px;
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    flex-direction: column;
+}
+.navbar{
+   
+    margin-top: 20px;
+   text-align: center;
+   margin-bottom: 0px;
+}
+.title{
+    margin-bottom: 10px;
+}
+#b1{
+    /* background-color: rgb(166, 10, 223); */
+    /* color: aliceblue; */
+    margin-right: 10px;
+    margin-left: 10px;
+    height: 30px;
+    width: 100px;
+   font-size: 20px;
+}
+#b2{
+    /* background-color: rgb(166, 10, 223); */
+    /* color: aliceblue; */
+    margin-right: 10px;
+    margin-left: 10px;
+    height: 30px;
+    width: 100px;
+    font-size: 20px;
+}
+#textf{
+    margin-top: 50px;
+    /* display: flex; */
+    align-items: center;
+    flex-direction: column;
+   margin-left:400px;
+    height: 100px;
+    width: 400px;
+} 
+ .record{
+    height: 50px;
+    font-size: 20px;
+    margin-top: 30px;
+} 
+#record{
+    height: 50px;
+    font-size: 30px;
+
+    margin: 40px;
+    /* padding: 10px; */
+    text-align: center;
+}
+@media only screen and (max-width:600px){
+    #textf{
+        width: 150px;
+        height: 50px;
+        margin-left: 100px;
+        font-size: 10px;
+    }
+}
+footer{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    color: aliceblue;
+    font-weight: 300;
+     position: absolute;
+    bottom: 0;
+      margin: 0 auto;
+    }
+
